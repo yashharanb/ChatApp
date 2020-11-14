@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+    background-color: #202745;
+    height: 100%;
+}
+
+form {
+    background: #000;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    margin-left: 20px;
+    width: 60%;
+}
+
+form input {
+    border: 0;
+    padding: 10px;
+    width: 90%;
+    margin-right: 0.5%;
+}
+
+form button {
+    width: 9%;
+    background: #aeb1bf;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#messages, #users {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages li, #users li {
+    padding: 10px;
+}
+
+#messages li:nth-child(odd) {
+    background: #eee;
+}
+
+#messages li:nth-child(even) {
+    background: #aeb1bf;
+}
+
+.myself {
+    font-weight: bold;
+}
+
+#app{  
+    height: 100%;
+    max-width: 960px;
+    display: flex;
+    margin: auto;
+}
+
+.message_col {
+    width: 70%;
+    float: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    bottom: 0;
+}
+
+.user_col {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    margin: 20px 20px 50px 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.timestamp, .username {
+    width: 20%;
+    float: left;
+}
