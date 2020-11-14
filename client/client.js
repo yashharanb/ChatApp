@@ -27,6 +27,7 @@ $(function () {
     // when we capture a chat message event we’ll include it in the page
     socket.on('chat message', function (msg) {
         showMessage(msg);
+        window.scrollTo(0, document.body.scrollHeight);
     });
 
     // Display active users to page
@@ -46,6 +47,8 @@ $(function () {
         history.forEach(function (msg) {
             showMessage(msg);
         }); 
+        
+        window.scrollTo(0, document.body.scrollHeight);
     });
 
     // Display error message

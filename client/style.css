@@ -61,7 +61,6 @@ form button {
 }
 
 #app{  
-    height: 100%;
     max-width: 960px;
     display: flex;
     margin: auto;
@@ -72,7 +71,6 @@ form button {
     float: left;
     padding: 20px;
     margin-bottom: 20px;
-    bottom: 0;
 }
 
 .user_col {
